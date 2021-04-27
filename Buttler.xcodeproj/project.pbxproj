@@ -16,6 +16,10 @@
 		4707446E2637DEC300D68D59 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4707446D2637DEC300D68D59 /* GameViewController.swift */; };
 		470744732637ED9600D68D59 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470744722637ED9600D68D59 /* Node.swift */; };
 		4707447A2637F61800D68D59 /* ReflectedStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470744792637F61800D68D59 /* ReflectedStringConvertible.swift */; };
+		4707447F2638072200D68D59 /* ActionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4707447D2638072200D68D59 /* ActionTableViewCell.swift */; };
+		470744802638072200D68D59 /* ActionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4707447E2638072200D68D59 /* ActionTableViewCell.xib */; };
+		4707449726380EF100D68D59 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4707449626380EF100D68D59 /* GameModel.swift */; };
+		4707449A26380FDA00D68D59 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4707449926380FDA00D68D59 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		4707446D2637DEC300D68D59 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		470744722637ED9600D68D59 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		470744792637F61800D68D59 /* ReflectedStringConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectedStringConvertible.swift; sourceTree = "<group>"; };
+		4707447D2638072200D68D59 /* ActionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ActionTableViewCell.swift; path = Buttler/Controllers/ActionTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		4707447E2638072200D68D59 /* ActionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ActionTableViewCell.xib; path = Buttler/Controllers/ActionTableViewCell.xib; sourceTree = SOURCE_ROOT; };
+		4707449626380EF100D68D59 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameModel.swift; path = Buttler/Controllers/GameModel.swift; sourceTree = SOURCE_ROOT; };
+		4707449926380FDA00D68D59 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Controllers/Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,7 @@
 				470744702637DECA00D68D59 /* Controllers */,
 				470744772637EDAB00D68D59 /* Views */,
 				4707445E2637DE1900D68D59 /* Assets.xcassets */,
+				4707449926380FDA00D68D59 /* Constants.swift */,
 				470744632637DE1900D68D59 /* Info.plist */,
 				4707446A2637DE4400D68D59 /* Supporting Files */,
 			);
@@ -94,6 +103,7 @@
 		470744752637EDA000D68D59 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4707449626380EF100D68D59 /* GameModel.swift */,
 				470744722637ED9600D68D59 /* Node.swift */,
 				470744792637F61800D68D59 /* ReflectedStringConvertible.swift */,
 			);
@@ -103,6 +113,8 @@
 		470744772637EDAB00D68D59 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4707447D2638072200D68D59 /* ActionTableViewCell.swift */,
+				4707447E2638072200D68D59 /* ActionTableViewCell.xib */,
 				4707445B2637DE1600D68D59 /* Main.storyboard */,
 			);
 			path = Views;
@@ -166,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				470744622637DE1900D68D59 /* LaunchScreen.storyboard in Resources */,
+				470744802638072200D68D59 /* ActionTableViewCell.xib in Resources */,
 				4707445F2637DE1900D68D59 /* Assets.xcassets in Resources */,
 				4707445D2637DE1600D68D59 /* Main.storyboard in Resources */,
 			);
@@ -179,11 +192,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4707446E2637DEC300D68D59 /* GameViewController.swift in Sources */,
+				4707447F2638072200D68D59 /* ActionTableViewCell.swift in Sources */,
 				470744732637ED9600D68D59 /* Node.swift in Sources */,
 				4707445A2637DE1600D68D59 /* ViewController.swift in Sources */,
 				470744562637DE1600D68D59 /* AppDelegate.swift in Sources */,
+				4707449726380EF100D68D59 /* GameModel.swift in Sources */,
 				4707447A2637F61800D68D59 /* ReflectedStringConvertible.swift in Sources */,
 				470744582637DE1600D68D59 /* SceneDelegate.swift in Sources */,
+				4707449A26380FDA00D68D59 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

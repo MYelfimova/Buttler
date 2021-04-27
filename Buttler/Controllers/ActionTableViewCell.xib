@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="actionCell" rowHeight="89" id="KGk-i7-Jjw" customClass="ActionTableViewCell" customModule="Buttler" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="291" height="89"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="291" height="89"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hnv-Dg-MBQ">
+                        <rect key="frame" x="0.0" y="5" width="291" height="79"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1sb-NI-Mfh">
+                                <rect key="frame" x="15" y="15" width="261" height="49"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="buttler-purple"/>
+                        <constraints>
+                            <constraint firstItem="1sb-NI-Mfh" firstAttribute="top" secondItem="Hnv-Dg-MBQ" secondAttribute="top" constant="15" id="0kC-bX-ias"/>
+                            <constraint firstAttribute="bottom" secondItem="1sb-NI-Mfh" secondAttribute="bottom" constant="15" id="5VW-s4-p6m"/>
+                            <constraint firstItem="1sb-NI-Mfh" firstAttribute="leading" secondItem="Hnv-Dg-MBQ" secondAttribute="leading" constant="15" id="Tjv-GS-8SL"/>
+                            <constraint firstAttribute="trailing" secondItem="1sb-NI-Mfh" secondAttribute="trailing" constant="15" id="WMt-Yi-kk9"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Hnv-Dg-MBQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="0VG-6B-6MS"/>
+                    <constraint firstItem="Hnv-Dg-MBQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Xfd-Or-mYV"/>
+                    <constraint firstAttribute="bottom" secondItem="Hnv-Dg-MBQ" secondAttribute="bottom" constant="5" id="eO6-OI-D1Y"/>
+                    <constraint firstAttribute="trailing" secondItem="Hnv-Dg-MBQ" secondAttribute="trailing" id="zWD-nW-T1Q"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="actionBubble" destination="Hnv-Dg-MBQ" id="65F-cR-nfZ"/>
+                <outlet property="actionLabel" destination="1sb-NI-Mfh" id="XYd-qW-Xtd"/>
+            </connections>
+            <point key="canvasLocation" x="13.768115942028986" y="110.82589285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="buttler-purple">
+            <color red="0.49000000953674316" green="0.41999998688697815" blue="0.49000000953674316" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

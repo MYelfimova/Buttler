@@ -60,13 +60,53 @@
                     <view key="view" contentMode="scaleToFill" id="Xcy-Ii-ZqT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Heg-Ho-zVh">
+                                <rect key="frame" x="41.5" y="115.5" width="331" height="150"/>
+                                <color key="backgroundColor" name="buttler-red"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="Vdb-bY-LQj"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38l-bt-Qb9">
+                                <rect key="frame" x="173.5" y="64" width="67" height="31.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RJV-3Q-3ex">
+                                <rect key="frame" x="41.5" y="305.5" width="331" height="556.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="yLJ-qj-wTL"/>
                         <color key="backgroundColor" name="buttler-orange"/>
+                        <constraints>
+                            <constraint firstItem="38l-bt-Qb9" firstAttribute="centerX" secondItem="Xcy-Ii-ZqT" secondAttribute="centerX" id="6Cm-1h-xSK"/>
+                            <constraint firstItem="RJV-3Q-3ex" firstAttribute="centerX" secondItem="Xcy-Ii-ZqT" secondAttribute="centerX" id="PzS-qD-Yhe"/>
+                            <constraint firstItem="Heg-Ho-zVh" firstAttribute="top" secondItem="38l-bt-Qb9" secondAttribute="bottom" constant="20" id="b4t-Ve-Giw"/>
+                            <constraint firstItem="RJV-3Q-3ex" firstAttribute="bottom" secondItem="yLJ-qj-wTL" secondAttribute="bottom" id="bNe-a3-bov"/>
+                            <constraint firstItem="RJV-3Q-3ex" firstAttribute="top" secondItem="Heg-Ho-zVh" secondAttribute="bottom" constant="40" id="ioR-Ij-nUo"/>
+                            <constraint firstItem="Heg-Ho-zVh" firstAttribute="width" secondItem="Xcy-Ii-ZqT" secondAttribute="width" multiplier="0.8" id="jrZ-s6-gqu"/>
+                            <constraint firstItem="Heg-Ho-zVh" firstAttribute="centerX" secondItem="Xcy-Ii-ZqT" secondAttribute="centerX" id="ppU-3A-0cG"/>
+                            <constraint firstItem="RJV-3Q-3ex" firstAttribute="width" secondItem="Xcy-Ii-ZqT" secondAttribute="width" multiplier="0.8" id="qyf-mm-Acc"/>
+                            <constraint firstItem="38l-bt-Qb9" firstAttribute="top" secondItem="yLJ-qj-wTL" secondAttribute="top" constant="20" id="wn5-Aw-ZEC"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="promptLabel" destination="Heg-Ho-zVh" id="7UA-bm-8g4"/>
+                        <outlet property="tableView" destination="RJV-3Q-3ex" id="aYT-ss-gEs"/>
+                        <outlet property="timeLabel" destination="38l-bt-Qb9" id="3Ls-Qd-XZC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vUo-bT-2B2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1091" y="88"/>
+            <point key="canvasLocation" x="1089.8550724637682" y="87.723214285714278"/>
         </scene>
     </scenes>
     <resources>
@@ -76,6 +116,9 @@
         </namedColor>
         <namedColor name="buttler-purple">
             <color red="0.49000000953674316" green="0.41999998688697815" blue="0.49000000953674316" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="buttler-red">
+            <color red="1" green="0.40000000596046448" blue="0.3529999852180481" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
