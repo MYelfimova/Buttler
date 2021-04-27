@@ -102,11 +102,73 @@
                         <outlet property="promptLabel" destination="Heg-Ho-zVh" id="7UA-bm-8g4"/>
                         <outlet property="tableView" destination="RJV-3Q-3ex" id="aYT-ss-gEs"/>
                         <outlet property="timeLabel" destination="38l-bt-Qb9" id="3Ls-Qd-XZC"/>
+                        <segue destination="caf-7J-LOL" kind="presentation" identifier="popUpSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="coverVertical" id="PgZ-x2-7XE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vUo-bT-2B2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1089.8550724637682" y="87.723214285714278"/>
+        </scene>
+        <!--Pop Up View Controller-->
+        <scene sceneID="WoO-hR-wHX">
+            <objects>
+                <viewController id="caf-7J-LOL" customClass="PopUpViewController" customModule="Buttler" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cp7-UX-6sB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dD4-Pu-9iA">
+                                <rect key="frame" x="41.5" y="255" width="331" height="386.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNs-yT-3p5">
+                                        <rect key="frame" x="10" y="10" width="311" height="286.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">You are a butler that for the last 20 years has been working for a rich family. One day you discover that your employer might go bankrupt soon and you might lose your beloved job. After discovering this, you feel stressed and being on the edge of a nervous breakdown. You love and hate this family just like you’d love and hate your own family. Let’s face it - you are BANANAS.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="0.98581839800000004" green="1" blue="0.97940588569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOT-vX-vue">
+                                        <rect key="frame" x="30" y="306.5" width="271" height="60"/>
+                                        <color key="backgroundColor" name="buttler-red"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                        <state key="normal" title="Let's Go! 🍌">
+                                            <color key="titleColor" red="0.98581839800000004" green="1" blue="0.97940588569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="letsGoButtonPressed:" destination="caf-7J-LOL" eventType="touchUpInside" id="x8N-o8-QLf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="buttler-purple"/>
+                                <constraints>
+                                    <constraint firstItem="iOT-vX-vue" firstAttribute="leading" secondItem="dD4-Pu-9iA" secondAttribute="leading" constant="30" id="DuE-mn-lw0"/>
+                                    <constraint firstAttribute="bottom" secondItem="YNs-yT-3p5" secondAttribute="bottom" constant="90" id="Kka-bh-t0M"/>
+                                    <constraint firstItem="YNs-yT-3p5" firstAttribute="leading" secondItem="dD4-Pu-9iA" secondAttribute="leading" constant="10" id="L73-Xk-r9l"/>
+                                    <constraint firstItem="YNs-yT-3p5" firstAttribute="top" secondItem="dD4-Pu-9iA" secondAttribute="top" constant="10" id="TYg-qo-UnC"/>
+                                    <constraint firstAttribute="trailing" secondItem="iOT-vX-vue" secondAttribute="trailing" constant="30" id="Uez-Ng-yhK"/>
+                                    <constraint firstAttribute="trailing" secondItem="YNs-yT-3p5" secondAttribute="trailing" constant="10" id="fWu-xT-8Mt"/>
+                                    <constraint firstAttribute="bottom" secondItem="iOT-vX-vue" secondAttribute="bottom" constant="20" id="yh3-UY-FBb"/>
+                                    <constraint firstItem="iOT-vX-vue" firstAttribute="top" secondItem="YNs-yT-3p5" secondAttribute="bottom" constant="10" id="zC7-pn-dYW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Dhc-Hl-qGP"/>
+                        <color key="backgroundColor" white="1" alpha="0.50253881997620031" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dD4-Pu-9iA" firstAttribute="width" secondItem="cp7-UX-6sB" secondAttribute="width" multiplier="0.8" id="ca8-w9-47x"/>
+                            <constraint firstItem="dD4-Pu-9iA" firstAttribute="centerX" secondItem="cp7-UX-6sB" secondAttribute="centerX" id="ghz-1B-koD"/>
+                            <constraint firstItem="dD4-Pu-9iA" firstAttribute="centerY" secondItem="cp7-UX-6sB" secondAttribute="centerY" id="hnh-Qj-XP2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="letsGoButton" destination="iOT-vX-vue" id="QrQ-XP-n81"/>
+                        <outlet property="popUpView" destination="dD4-Pu-9iA" id="LBS-hA-Bk8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cRL-9O-wYw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2094.202898550725" y="81.696428571428569"/>
         </scene>
     </scenes>
     <resources>

@@ -11,6 +11,8 @@ struct K {
     static let cellNibName = "ActionTableViewCell"
     static let cellIdentifier = "actionCell"
     
+    static let popUpSegue = "popUpSegue"
+    
     struct colors {
         static let red = "buttler-red"
         static let purple = "buttler-purple"

@@ -20,6 +20,7 @@
 		470744802638072200D68D59 /* ActionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4707447E2638072200D68D59 /* ActionTableViewCell.xib */; };
 		4707449726380EF100D68D59 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4707449626380EF100D68D59 /* GameModel.swift */; };
 		4707449A26380FDA00D68D59 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4707449926380FDA00D68D59 /* Constants.swift */; };
+		4707449E26382E1500D68D59 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4707449D26382E1500D68D59 /* PopUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		4707447E2638072200D68D59 /* ActionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ActionTableViewCell.xib; path = Buttler/Controllers/ActionTableViewCell.xib; sourceTree = SOURCE_ROOT; };
 		4707449626380EF100D68D59 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameModel.swift; path = Buttler/Controllers/GameModel.swift; sourceTree = SOURCE_ROOT; };
 		4707449926380FDA00D68D59 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Controllers/Constants.swift; sourceTree = "<group>"; };
+		4707449D26382E1500D68D59 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				4707447D2638072200D68D59 /* ActionTableViewCell.swift */,
 				4707447E2638072200D68D59 /* ActionTableViewCell.xib */,
 				4707445B2637DE1600D68D59 /* Main.storyboard */,
+				4707449D26382E1500D68D59 /* PopUpViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				470744732637ED9600D68D59 /* Node.swift in Sources */,
 				4707445A2637DE1600D68D59 /* ViewController.swift in Sources */,
 				470744562637DE1600D68D59 /* AppDelegate.swift in Sources */,
+				4707449E26382E1500D68D59 /* PopUpViewController.swift in Sources */,
 				4707449726380EF100D68D59 /* GameModel.swift in Sources */,
 				4707447A2637F61800D68D59 /* ReflectedStringConvertible.swift in Sources */,
 				470744582637DE1600D68D59 /* SceneDelegate.swift in Sources */,
