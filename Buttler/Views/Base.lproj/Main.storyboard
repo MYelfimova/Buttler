@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Buttler" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buttler-big-image" translatesAutoresizingMaskIntoConstraints="NO" id="SP3-ru-9SB">
+                                <rect key="frame" x="4" y="111.5" width="372.5" height="494"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="494" id="HXS-Jq-wHW"/>
+                                    <constraint firstAttribute="width" secondItem="SP3-ru-9SB" secondAttribute="height" multiplier="372:493" id="iee-7w-Lqe"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGy-oB-Wwf">
+                                <rect key="frame" x="176" y="605.5" width="62" height="53"/>
+                                <color key="backgroundColor" name="buttler-purple"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rRj-Oc-hdq" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="d8E-j7-idU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="buttler-orange"/>
+                        <constraints>
+                            <constraint firstItem="SP3-ru-9SB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.92" id="4ZE-KC-wZb"/>
+                            <constraint firstItem="TGy-oB-Wwf" firstAttribute="top" secondItem="SP3-ru-9SB" secondAttribute="bottom" id="GpI-rU-7tx"/>
+                            <constraint firstItem="SP3-ru-9SB" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="OLL-Qx-WlS"/>
+                            <constraint firstItem="SP3-ru-9SB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.8" id="hFB-PH-amP"/>
+                            <constraint firstItem="TGy-oB-Wwf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="trl-Ao-ZhO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playButton" destination="TGy-oB-Wwf" id="Ggc-IT-xMd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="98.550724637681171" y="88.392857142857139"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="mdz-ju-tQf">
+            <objects>
+                <viewController id="rRj-Oc-hdq" customClass="GameViewController" customModule="Buttler" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xcy-Ii-ZqT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="yLJ-qj-wTL"/>
+                        <color key="backgroundColor" name="buttler-orange"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vUo-bT-2B2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1091" y="88"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="buttler-big-image" width="557" height="493"/>
+        <namedColor name="buttler-orange">
+            <color red="0.99999767539999995" green="0.54904848340000001" blue="0.3921305537" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="buttler-purple">
+            <color red="0.49016791580000002" green="0.4196347594" blue="0.49013537169999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
