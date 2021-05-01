@@ -1,0 +1,33 @@
+{
+  "version": "0.0.1a",
+  "data": {
+    "action": "Start playing",
+    "prompt": "You are a butler bla bla bla",
+    "state": "start game",
+    "points": 0,
+    "nodes": [
+      {
+        "action": "do good",
+        "prompt": "You did good, what do now?",
+        "state": "mid game",
+        "points": 1,
+        "nodes": [
+          {
+            "action": "do more good",
+            "prompt": "You did more good, what do now?",
+            "state": "end game",
+            "points": 1,
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "action": "do bad",
+        "prompt": "You did bad, what do now?",
+        "state": "mid game",
+        "points": -1,
+        "nodes": []
+      }
+    ]
+  }
+}
